@@ -1,14 +1,9 @@
-/* =========================
-   BIOQUOTE SECTION
-========================= */
-
 .bioquote {
   padding: 120px 60px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
   color: #111;
 }
 
-/* WRAPPER */
 .bioquote-wrapper {
   max-width: 1200px;
   margin: 0 auto;
@@ -17,10 +12,6 @@
   gap: 100px;
   align-items: start;
 }
-
-/* =========================
-   MAIN QUOTE
-========================= */
 
 .bioquote-main {
   position: relative;
@@ -47,7 +38,6 @@
   max-width: 720px;
 }
 
-/* DIVIDER */
 .quote-divider {
   width: 180px;
   height: 2px;
@@ -55,7 +45,6 @@
   margin: 44px 0 28px;
 }
 
-/* AUTHOR */
 .quote-author h4 {
   font-size: 15px;
   margin: 0 0 4px;
@@ -66,10 +55,6 @@
   font-size: 13px;
   color: #777;
 }
-
-/* =========================
-   ASIDE
-========================= */
 
 .bioquote-aside {
   border-left: 1px solid #e5e5e5;
@@ -105,7 +90,6 @@
   margin-bottom: 22px;
 }
 
-/* BULLET LIST */
 .bioquote-aside ul {
   padding-left: 18px;
   margin: 0;
@@ -117,10 +101,6 @@
   margin-bottom: 8px;
   list-style: disc;
 }
-
-/* =========================
-   RESPONSIVE
-========================= */
 
 @media (max-width: 1024px) {
   .bioquote-wrapper {
