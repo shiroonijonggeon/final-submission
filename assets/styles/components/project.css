@@ -1,0 +1,169 @@
+.experience {
+  padding: 70px 60px;
+  font-family: system-ui, sans-serif;
+  color: #000;
+  overflow-x: hidden; 
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 120px;
+}
+
+.experience-header h2 {
+  font-size: 34px;
+  max-width: 500px;
+  margin:30px 0px 30px 0px;
+}
+
+.experience-header p {
+  font-size: 18px;
+  color: #777;
+  max-width: 360px;
+  margin: 60px 0px 30px 0px
+}
+
+.experience-list {
+  border-top: 1px solid #e5e5e5;
+}
+
+.experience-item {
+  position: relative;
+  display: flex;                 
+  justify-content: space-between;
+  align-items: center;           
+  padding: 34px 0;
+  border-bottom: 1px solid #e5e5e5;
+  z-index: 1;
+}
+
+.experience-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  height: 100%;
+  background: #f1f1f1;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  z-index: -1;
+}
+
+.experience-item:hover::before,
+.experience-item.active::before {
+  opacity: 1;
+}
+
+.experience-item .left {
+  max-width: 60%;
+}
+
+.experience-item .left h3 {
+  font-size: 24px;
+  font-weight: 500;
+  margin: 0 0 6px;
+}
+
+.experience-item .left p {
+  font-size: 16px;
+  color: #777;
+  max-width: 600px;
+  margin: 0;
+}
+
+.experience-item .right {
+  font-size: 38px;
+  font-weight: 600;
+  white-space: nowrap;
+  flex-shrink: 0;
+  transform: translateY(-2px); 
+}
+
+@media (max-width: 1024px) {
+  .experience {
+    padding: 60px 40px;
+  }
+
+  .experience-header {
+    gap: 60px;
+  }
+
+  .experience-header h2 {
+    font-size: 30px;
+    max-width: 100%;
+  }
+
+  .experience-header p {
+    font-size: 17px;
+    max-width: 100%;
+    margin-top: 40px;
+  }
+
+  .experience-item .right {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .experience {
+    padding: 50px 24px;
+  }
+
+  .experience-header {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .experience-header h2 {
+    font-size: 26px;
+    margin: 0;
+  }
+
+  .experience-header p {
+    font-size: 16px;
+    margin: 0;
+  }
+
+  .experience-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 26px 0;
+  }
+
+  .experience-item .left {
+    max-width: 100%;
+  }
+
+  .experience-item .left h3 {
+    font-size: 20px;
+  }
+
+  .experience-item .left p {
+    font-size: 15px;
+  }
+
+  .experience-item .right {
+    font-size: 26px;
+    transform: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .experience {
+    padding: 40px 18px;
+  }
+
+  .experience-header h2 {
+    font-size: 22px;
+  }
+
+  .experience-item .right {
+    font-size: 22px;
+  }
+}
+
